@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.jsx";
+import Highlights from "../components/Highlights.jsx";
+import Model from "../components/Model.jsx";
+import Features from "../components/Features.jsx";
+import HowItWorks from "../components/HowItWorks.jsx";
+import Footer from "../components/Footer.jsx";
+---
+
+<Layout title="iPhone 15 Pro">
+  <main class="bg-black">
+    <Navbar />
+    <Hero client:only />
+    <Highlights client:only />
+    <Model client:only />
+    <Features client:only />
+    <HowItWorks client:only />
+    <Footer client:only/>
+  </main>
+</Layout>
